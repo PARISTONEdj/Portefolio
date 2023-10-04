@@ -1,0 +1,550 @@
+
+*, html{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20;
+
+   @media screen and (max-width: 680px) {
+     background-color: black;
+     flex-direction: column;
+   }
+}
+
+.gauche{
+    display: flex;
+    /* border: 2px solid white; */
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+
+    @media screen and (max-width: 640px) {
+       flex-direction: column;
+    }
+}
+
+.gauche >h3{
+    color: white;
+    margin-left: 10px;
+    font-family: 'Croissant One', cursive;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.photo{
+    width: 40px;
+    padding: 5;
+    border-radius: 50px;
+}
+
+.photo:hover{
+    width: 150px;
+    cursor: pointer;
+}
+
+.p1{
+    border-radius: 10px;
+}
+
+.centre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10;
+    cursor: pointer;
+
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+      }
+}
+
+
+.centre > p{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px ;
+    font-size: 22px;
+    font-family: 'Croissant One', cursive;
+    @media screen and (max-width: 480px) {
+        padding-bottom: 5px;
+      }
+}
+
+.centre > p >a{
+    text-decoration: none;
+    color: white;
+}
+
+.centre > p:hover{
+   background-color: gray;
+   padding: 20px;
+}
+
+.droite{
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.droite >p{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Croissant One', cursive;
+
+}
+
+.droite >p:hover{
+    background-color: gray;
+    padding: 20px;
+}
+
+.droite >p >a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer{
+    background-color: black;
+    padding: 30px;
+}
+.footer > div> a> i {
+    color: white;
+    font-size: 100px;
+    cursor: pointer;
+    margin-right: 10px;
+
+    @media screen and (max-width:640px) {
+        font-size: 50px;
+    }
+}
+
+.footer > div> a> i:hover {
+  color: blue;
+}
+
+.footer>div{
+    justify-content: space-around;
+}
+
+.competence{
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        
+      }
+
+   
+}
+
+@media screen and (max-width: 480px) {
+    .competence > div{
+        border-bottom: 2px solid white;
+        padding-bottom: 20px;
+    }
+  }
+
+.competence > div >h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.competence >div >p{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+} 
+
+.programmation{
+    display: flex;
+    justify-content: space-around;
+}
+
+.langage{
+    padding: 5px;
+}
+
+.langage >h4{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.langage> ul > div> div> li > i{
+    font-size: 40px;
+    color: orange;
+    margin-bottom: 5px;
+}
+
+.langage> ul > div> div> li{
+    list-style: none;
+}
+
+.framework{
+    padding: 5px;
+    margin-left: 60px;
+}
+
+.framework >h4{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.framework> ul >li > i{
+    font-size: 40px;
+    color: blue;
+}
+
+.framework > ul >li{
+    margin-bottom: 5px;
+    cursor: pointer;
+    list-style-type : none; 
+}
+
+.p2{
+    display: flex;
+}
+
+.p3{
+    margin-left: 40px;
+}
+
+.base1{
+    margin-top: 20px;
+}
+
+.base2{
+   display: flex;
+}
+
+.base2 >li{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.base3{
+    display: flex;
+}
+.base3 >li{
+    margin-left: 30px;
+    list-style: none;
+}
+
+.base >ul >li{
+    margin-top: 10px;
+    margin-left: 40px;
+    list-style: none;
+}
+
+.body{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.Parcours{
+    margin-top: 20px;
+    padding: 20px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.Parcours >div{
+    display: flex;
+}
+
+.Parcours >div >div{
+    width: 100%;
+    height: 100%;
+}
+
+.Parcours >div >div >img{
+   width: 100%;
+   height: 200px;
+}
+
+@media screen and (max-width: 680px) {
+    .Parcours > div{
+        flex-direction: column;
+    }
+    .Parcours{
+        height: 100%;
+        align-items: center;
+    }
+
+   
+  }
+
+.par1{
+    margin-top: 20px;
+    padding: 40px;
+}
+
+.par1 > p{
+    font-family: 'Croissant One', cursive;
+}
+
+.Presentation{
+    background-color: black;
+    padding: 40px;
+}
+
+.Presentation > p{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Young Serif', serif;
+}
+
+.Presentation > h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projet{
+    background-color: beige;
+    padding: 10px;
+}
+.projet1{
+   
+    background-color: white;
+    width: 50%;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    @media screen and (max-width: 640px) {
+        width: 80%;
+        
+    }
+}
+
+.projet1:hover{
+    background-color: yellow;
+}
+
+.projet1 > p{
+    font-family: 'Croissant One', cursive;
+}
+
+.projet2 > p{
+    font-family: 'Croissant One', cursive;
+}
+
+.projet3 > p{
+    font-family: 'Croissant One', cursive;
+}
+
+.projet4 > p{
+    font-family: 'Croissant One', cursive;
+}
+
+.projet2{
+    background-color: white;
+    width: 50%;
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: 45%;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    @media screen and (max-width: 640px) {
+       margin-left: 0%;
+       width: 80%;
+      }
+}
+
+.projet2:hover{
+    background-color: yellow;
+}
+
+.projet3{
+    background-color: white;
+    width: 50%;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    @media screen and (max-width: 640px) {
+        width: 80%;
+        
+    }
+}
+
+.projet3:hover{
+    background-color: yellow;
+}
+
+.projet4{
+    background-color: white;
+    width: 50%;
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: 45%;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    @media screen and (max-width: 640px) {
+        width: 80%;
+        margin-left: 0%;
+    }
+}
+
+.projet4:hover{
+    background-color: yellow;
+}
+
+.projet-carte{
+    display: flex;
+    justify-content: space-around;
+    background-color: azure;
+    cursor: pointer;
+
+    @media screen and (max-width: 640px) {
+        flex-direction: column;
+    }
+}
+
+.projet-carte > div{
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.projet-carte > div:hover{
+    padding: 40px;
+    background-color: yellow;
+}
+
+.projet-carte > div >p{
+    font-family: 'Abhaya Libre', serif;
+    font-family: 'Croissant One', cursive;
+}
+
+.contact{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    background-color: whitesmoke;
+
+    @media screen and (max-width: 640px) {
+        flex-direction: column;
+    }
+}
+
+.contact >div> p{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Croissant One', cursive;
+    color: blue;
+
+}
+
+.contact >div> p>a{
+    
+    color: blue;
+
+}
+
+.contact > div{
+    justify-content: center;
+    padding: 10px;
+
+    @media screen and(max-width: 640px) {
+        margin-bottom: 20px;
+        background-color: red;
+    }
+}
+
+.contact > div >a >i{
+    font-size: 60px;
+}
+
+.contact > div >a >i:hover{
+    font-size: 80px;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form > input{
+    padding: 8px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+form > textarea{
+    padding: 4px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border:none;
+    width: 100%;
+}
+
+form > button{
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    background-color: blue;
+    color: white;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.git{
+    /* background-color: red; */
+    padding: 5px;
+    border: 2px solid blue;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.git:hover{
+    background-color: blue;
+    color: white;
+}
+
+.pgit{
+    margin: 10px;
+}
+
+.date{
+    color: gray;
+    text-align: right;
+}
+
+
