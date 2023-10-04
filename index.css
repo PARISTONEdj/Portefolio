@@ -79,6 +79,8 @@
 .centre > p >a{
     text-decoration: none;
     color: white;
+    transition: width 2s, height 2s, transform 2s;
+
 }
 
 .centre > p:hover{
@@ -288,12 +290,16 @@
         align-items: center;
     }
 
+    .Parcours >div >div >img{
+        margin-top: 10px;
+     }
+
    
   }
 
 .par1{
     margin-top: 20px;
-    padding: 40px;
+    padding-top: 20px;
 }
 
 .par1 > p{
@@ -546,5 +552,8 @@ form > button{
     color: gray;
     text-align: right;
 }
+
+
+
 
 
