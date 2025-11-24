@@ -1,299 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DJOYOU</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Croissant+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Croissant+One&family=Abhaya+Libre&display=swap" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <div class="header">
-        <div class="gauche">
-            <div class="photo">
-                <img width="100%" src="profile.jpg"  alt="" class="p1">
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="gauche">
+                <div class="photo">
+                    <img src="profile.jpg" alt="Photo de DJOYOU" class="p1" width="100%">
+                </div>
+                <h3>DJOYOU</h3>
             </div>
-            <h3>DJOYOU</h3>
+
+            <nav class="centre">
+                <a href="#presentation">Présentation</a>
+                <a href="#parcours">Parcours</a>
+                <a href="#projets">Mes Projets</a>
+                <a href="#competences">Compétences</a>
+                <a href="#resume">CV</a>
+            </nav>
+
+            <div class="droite">
+                <a class="btn-primary" href="#contacts">Contact</a>
+            </div>
         </div>
+    </header>
 
-        <div class="centre">
-                <p><a href="#presentation">PRESENTATION</a></p>
-                <p><a href="#parcours">PARCOURS</a></p>
-                <p><a href="#projets">MES PROJETS</a></p>
-                <p><a href="#competences">COMPETENCES</a></p>
-        </div>
+    <br/>
+    <br/>
+   
 
-        <div class="droite">
-            <p><a href="#contacts">CONTACT</a></p>
-        </div>
-    </div>
-
-    <div id="presentation" class="Presentation">
-        <h2>Présentation</h2>
-        <p>Bonjour</p>
-        <p>Je me nomme DJOYOU Wiyao Carlos, je suis d'origine togolaise. Je suis actuellement en master 2
-            Professionnel en Ingénieure du Logiciel </p>
-    </div>
-
-    <div class="body">
-
-
-        <div class="Parcours" id="parcours">
-            <h2>Parcours</h2>
+    <!-- Présentation -->
+    <section id="presentation" class="presentation">
+        <div class="container presentation-content">
             <div>
-                <div class="par1">
-                    <p>Bachelier depuis juillet 2019, j'ai effectué une formation de 3 ans pour l'obtention de ma licence en parcours Ingénieur de Travaux Informatique à l'institut africaine d'informatique IAI-Togo </p>
-                </div>
-                <div>
-                   <img src="iai.jpeg" alt=""/>
-                </div>
-            </div>
-           
-             
-        </div>
-
-        <div class="Parcours">
-            <div>
-                <div>
-                    <img src="polytech.png" alt=""/>
-                </div>
-                <div class="par1">
-                    <p>
-                       Aujourd'hui, j'ai rejoint l'école Polytech Intl à Tunis dans le but d'apprendre davantage sur la programmation et les nouvelles technologies dans le domaine de l'informatique.
-                    </p> 
-                    <p>
-                        Disposant d'un Bac+4, je suis actuellement en master 2 professionnels en attendant de soutenir ma maîtrise de fin de formation.                    </p>  
+                <p class="eyebrow">Ingénieur logiciel</p>
+                <h1>DJOYOU Wiyao Carlos</h1>
+                <p>Titulaire d’un master professionnel en génie logiciel (major de promotion 2024) avec 3+ stages conséquents en web, mobile et data.</p>
+                <p>J’accompagne la transformation digitale avec des solutions Node.js, Flutter et MongoDB performantes, du concept au déploiement.</p>
+                <div class="hero-cta">
+                    <a class="btn-primary" href="#projets">Voir mes projets</a>
+                    <a class="btn-secondary" href="#contacts">Parlons ensemble</a>
                 </div>
             </div>
-           
-             
         </div>
+    </section>
 
+    <!-- Main Content -->
+    <main class="body container">
 
-        <div class="projet" id="projets">
-            <h2>Mes Projets</h2>
-            <div class="projet1">
-                <h3>Les Plaisirs, simple Togo</h3>
-                <p>Ce projet a consisté à mettre en place un site web vitrine pour la présentation des produits d'un prestataire de produit agro-alimentaire.
-                </p>
-                <p>Technologie utilisée pour développé Html5 <i class="fa-brands fa-html5"></i>  css3 <i class="fa-brands fa-css3-alt"></i></p>
-                <p>pour voire le site <a href="https://paristonedj.github.io/lesplaisirs-simplestogo.com/">Cliquer ici</a> 
-                </p>
-                <p class="pgit">
-                    <a class="git" href="https://github.com/PARISTONEdj/lesplaisirs-simplestogo.com.git">
-                        lien Github
-                        <i class="fa-brands fa-github"></i>
-                    </a>
+        <!-- Parcours -->
+        <section id="parcours" class="parcours">
+            <h2 class="section-title">Parcours académique et professionnel</h2>
         
-                </p>
-                <p class="date"> juin 2020</p>
-            </div>
-            <div class="projet2">
-                <h3>Pharma +</h3>
-                <p> Ce projet a consisté à mettre en place une plateforme web pour la gestion de la vente de produit pharmaceutique ainsi que l'agenda des médecins dans le cas des pharmacies clinique. Il s'agit d'un projet qui a servi de validation pour le passage en 3e année de licence.  
-                </p>
-                <p>Technologie utilisée pour développé Asp.net web form C#</p>
-                <p class="pgit"> <a class="git" href="#">lien Github
-                    <i class="fa-brands fa-github"></i></a>
-                </p>
-                <p class="date">juin - juiellet 2021</p>
-            </div>
-            <div class="projet3">
-                <h3>GesImo</h3>
-                <p>Ce projet a consisté à mettre en place une plateforme web pour la Publication d'annonce immobilière.
-                    Il s'agit d'un projet qui a servi de validation pour mon mémoire de fin de formation de mon parcours de licence. 
-                </p>
-                <p>Technologie utilisée Python couplet au framework Django <i class="fa-brands fa-python"></i></p>
-
-                <p class="pgit"> 
-                    <a class="git" href="https://github.com/PARISTONEdj/GESIMO-IT.git">
-                        lien Github
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-    
-                </p>
-                <p class="date">Mai - Aout 2022</p>
-            </div>
-
-            <div class="projet4">
-                <h3>IINSTORE</h3>
-                <p>Ce projet a consisté à mettre en place une plateforme Mobile pour la gestion des ventes des petites boutiques.
-                    Dans ce projet, j'ai participé à la réalisation de l'interface graphique utilisateur. 
-                </p>
-                <p>Technologie utilisée React Native <i class="fa-brands fa-react"></i></p>
-
-                <p class="pgit"> <a class="git" href="#">lien Github
-                    <i class="fa-brands fa-github"></i></a>
-                </p>
-                <p class="date"> juin 2022</p>
-            </div>
-
-            <div class="projet-carte">
-                <div class="projet5">
-                    <p>Développement d'une mini-calculatrice dans un cadre d'apprentissage pour le Développement mobile
-                    </p>
-                    <p>Technologie utilisée Java android studio <i class="fa-brands fa-android"></i></p>
-    
-                    <p class="pgit"> 
-                        <a class="git" href="https://github.com/PARISTONEdj/MyCalculatrice.git">
-                            lien Github
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </p>
-                    <p class="date"> Avril 2023</p>
+            <!-- IAI Togo -->
+            <div class="parcours-card">
+                <div class="parcours-image">
+                    <img src="iai.jpeg" alt="Institut Africain d’Informatique (IAI Togo)">
                 </div>
-    
-                <div class="projet6">
-                    <p>Développement d'un web service rest et soap pour communiquer avec un seul front
-                    </p>
-                    <p>Technologie utilisé web service SOAP java <i class="fa-brands fa-java"></i>
-                        web service rest : <i class="fa-brands fa-node"></i>
-                        front : react <i class="fa-brands fa-react"></i> </p>
-    
-                    <p class="pgit"> 
-                        <a class="git" href="https://github.com/PARISTONEdj/Forum-MPGL.git">
-                            lien Github 
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </p>
-                    <p class="date"> Mai 2023</p>
-                </div>
-    
-                <div class="projet7">
-                    <p>Développement d'une application desktop de gestion de stock et des ventes d'une pharmacie
-                    </p>
-                    <p>Technologie utilisée java DAO Jdbc <i class="fa-brands fa-java"></i>
-                    </p>
-    
-                    <p class="pgit"> 
-                        <a class="git" href="https://github.com/PARISTONEdj/GESPHARMA.git">
-                            lien Github 
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </p>
-                    <p class="date"> janvier 2023</p>
-                </div>
-
-            </div>
-
-            
-        </div>
-    </div>
-
-    <div class="competence" id="competences">
-        <div>
-            <h3>Reseaux</h3>
-           <p>Competence de base en cisco CCNA</p>
-           <img src="ccna.jpg" width="100px" alt="">
-        </div>
-
-        <div>
-            <h3>programmation</h3>
-            <div class="programmation">
-                <div class="langage">
-                    <h4>Langage</h4>
-                    <ul>
-                        <div class="p2">
-                            <div>
-                                <li><img src="c.png" width="40px" alt=""></li>
-                                <li><img src="c-sharp.jpg" width="40px" alt=""></li>
-                                <li><i class="fa-brands fa-java" width="60px"></i></li>
-                                <li><img src="pythpn.jpg" width="40px" alt=""></li>
-                            </div>
-                            <div class="p3">
-                                <li> <i class="fa-brands fa-html5"></i></li>
-                                <li><i class="fa-brands fa-css3-alt"></i></li>
-                                <li><i class="fa-brands fa-js"></i></li>
-                                <li><img src="php.png" width="40px" alt=""></li>
-                            </div>
-                        </div>
-                       
-                    </ul>
-                </div> 
-                <div class="framework"> 
-                    <h4>Framework</h4>
-                        <ul>
-                            <li><i class="fa-brands fa-laravel" ></i></li>
-                            <li><i class="fa-brands fa-react"></i></li>
-                            <li><img src="spring.jpg" width="70px" alt=""></li>
-                            <li><img src="django.png" width="70px" alt=""></li>
-                            <li><img src="flutter.jpg" width="50px" alt=""></li>
-                        </ul>
+                <div class="parcours-content">
+                    <h3>Institut Africain d’Informatique (IAI Togo)</h3>
+                    <p><strong>Domaine :</strong> Éducation / Informatique</p>
+                    <p><strong>Diplôme :</strong> Licence Génie Logiciel & Systèmes d’Information</p>
+                    <p><strong>Période :</strong> Août 2019 - Juillet 2022</p>
+                    <p>Solide base en développement logiciel, réseaux et systèmes d’information. Première expérience académique structurée qui a préparé à des projets professionnels et stages.</p>
                 </div>
             </div>
-        </div>
-        <div class="base">
-            <h3>Base de donnée</h3>
-            <ul>
-                <div class="base1">
-                    <div class="base3">
-                        <li><img src="sql-server.png" width="60px" alt=""/></li>
-                        <li><img src="mysql.png" width="60px"/></li>
+        
+            <!-- Polytech International Tunis -->
+            <div class="parcours-card">
+                <div class="parcours-image">
+                    <img src="polytech.png" alt="Polytech International Tunis">
+                </div>
+                <div class="parcours-content">
+                    <h3>Polytech International Tunis</h3>
+                    <p><strong>Domaine :</strong> Éducation / Génie Logiciel</p>
+                    <p><strong>Diplôme :</strong> Master 1 & Master 2 Génie Logiciel</p>
+                    <p><strong>Période :</strong> Septembre 2022 - Octobre 2024</p>
+                    <p>Approfondissement des pratiques avancées en génie logiciel, industrialisation des développements et gestion de projets collaboratifs. Major de promotion 2024.</p>
+                </div>
+            </div>
+        
+            <!-- Parcours professionnel résumé -->
+            <div class="parcours-card">
+                <h3>Expériences professionnelles</h3>
+                <p>Stages réalisés entre 2022 et 2025 : IT-Innovation, L’International des Sciences (IS), OptimBrains et ANID Togo. Développement web, mobile et data, en utilisant des technologies comme Node.js, Flutter, MongoDB, React et ASP.NET.</p>
+            </div>
+        </section>
+        
+
+        <!-- Projets -->
+        <section id="projets" class="projets">
+            <h2 class="section-title">Expériences & Projets récents</h2>
+            <div class="projets-grid">
+        
+                <!-- ANID Togo -->
+                <article class="projet-card">
+                    <h3>Agence Nationale d’Identification des citoyens (ANID Togo) – Application de distribution biométrique</h3>
+                    <p>Domaine : Administration publique / Services citoyens</p>
+                    <p>Développement d’une application web pour orchestrer la distribution des cartes biométriques et sécuriser les workflows d’enrôlement.</p>
+                    <p>Stack : Node.js, React, MongoDB, micro-services.</p>
+                    <p class="date">Juin 2025 (stage en cours)</p>
+                </article>
+        
+                <!-- OptimBrains -->
+                <article class="projet-card">
+                    <h3>OptimBrains SARL – Plateformes web & CRM</h3>
+                    <p>Domaine : Entreprise de services numériques (ESN)</p>
+                    <p>Site vitrine, gestion des formations, blog et messagerie intégrée pour une ESN tunisienne.</p>
+                    <p>Stack : React, Node.js, PostgreSQL, intégration email.</p>
+                    <p class="date">Mars – Juin 2025</p>
+                </article>
+        
+                <!-- IS -->
+                <article class="projet-card">
+                    <h3>L’International des Sciences (IS) – Portail & App mobile d’événements</h3>
+                    <p>Domaine : Éducation / Gestion d’événements</p>
+                    <p>Projet de fin de Master : plateforme web + mobile (Flutter) pour publier et réserver des événements.</p>
+                    <p>Stack : Flutter, Django REST, PostgreSQL.</p>
+                    <p class="pgit">
+                        <a class="git" href="https://github.com/PARISTONEdj/GESIMO-IT.git">Voir le projet sur GitHub <i class="fa-brands fa-github"></i></a>
+                    </p>
+                    <p class="date">Mars – Juillet 2024</p>
+                </article>
+        
+                <!-- IT-Innovation -->
+                <article class="projet-card">
+                    <h3>IT-Innovation SARL – Annonces immobilières & gestion de stock</h3>
+                    <p>Domaine : Développement logiciel / Immobilier et Retail</p>
+                    <p>Site de publication d’annonces et interface mobile de gestion pour petites boutiques.</p>
+                    <p>Stack : ASP.NET C#, React Native, SQL Server.</p>
+                    <p class="date">Juin – Août 2022</p>
+                </article>
+        
+                <!-- Les Plaisirs Simple Togo -->
+                <article class="projet-card">
+                    <h3>Les Plaisirs Simple Togo – Site vitrine agroalimentaire</h3>
+                    <p>Domaine : Agroalimentaire</p>
+                    <p>Site vitrine simple pour une entreprise locale agroalimentaire.</p>
+                    <p>Stack : HTML5, CSS3</p>
+                    <p class="pgit">
+                        <a class="git" href="https://paristonedj.github.io/lesplaisirs-simplestogo.com/">Voir le site</a>
+                    </p>
+                    <p class="date">Juin 2020</p>
+                </article>
+        
+                <!-- Services REST/SOAP -->
+                <article class="projet-card">
+                    <h3>Projet universitaire – Services REST/SOAP unifiés</h3>
+                    <p>Domaine : Développement logiciel / Web services</p>
+                    <p>Développement de services web Node.js et Java SOAP avec front React unique.</p>
+                    <p class="pgit">
+                        <a class="git" href="https://github.com/PARISTONEdj/Forum-MPGL.git">Voir sur GitHub <i class="fa-brands fa-github"></i></a>
+                    </p>
+                    <p class="date">Mai 2023</p>
+                </article>
+        
+                <!-- GesPharma -->
+                <article class="projet-card">
+                    <h3>Projet GesPharma – Application desktop de gestion de stock</h3>
+                    <p>Domaine : Santé / Pharmacie</p>
+                    <p>Application desktop pour la gestion des stocks pharmaceutiques avec Java DAO/JDBC.</p>
+                    <p class="pgit">
+                        <a class="git" href="https://github.com/PARISTONEdj/GESPHARMA.git">Voir sur GitHub <i class="fa-brands fa-github"></i></a>
+                    </p>
+                    <p class="date">Janvier 2023</p>
+                </article>
+        
+                <!-- Portfolio -->
+                <article class="projet-card">
+                    <h3>Portfolio personnel – Présentation de projets</h3>
+                    <p>Domaine : Développement personnel / Portfolio</p>
+                    <p>Portfolio en ligne présentant mes projets, expériences et compétences.</p>
+                    <p class="pgit">
+                        <a class="git" href="https://paristonedj.github.io/Portefolio/">Voir le site <i class="fa-brands fa-github"></i></a>
+                    </p>
+                    <p class="date">2023</p>
+                </article>
+        
+            </div>
+        </section>
+        
+
+    </main>
+
+    <!-- Compétences -->
+    <section id="competences" class="competences">
+        <h2 class="section-title">Compétences</h2>
+        <div class="competences-grid">
+    
+            <!-- Réseaux -->
+            <div class="competence-card">
+                <h3>Réseaux</h3>
+                <p>Compétences de base en Cisco CCNA</p>
+                <img src="ccna.jpg" width="100px" alt="CCNA">
+            </div>
+    
+            <!-- Programmation -->
+            <div class="competence-card">
+                <h3>Programmation</h3>
+    
+                <div class="programmation-section">
+                    <h4>Langages</h4>
+                    <div class="langages">
+                        <img src="c.png" width="40px" alt="C">
+                        <img src="c-sharp.jpg" width="40px" alt="C#">
+                        <i class="fa-brands fa-java" title="Java"></i>
+                        <img src="pythpn.jpg" width="40px" alt="Python">
+                        <i class="fa-brands fa-html5" title="HTML5"></i>
+                        <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                        <i class="fa-brands fa-js" title="JavaScript"></i>
+                        <img src="php.png" width="40px" alt="PHP">
                     </div>
-                    <div class="base2">
-                        <li><img src="oracle.png" width="70px" alt=""></li>
-                        <li><img src="postgresql.jpg" width="70px" alt=""></li>
+
+                    <br/>
+                    <br/>
+    
+                    <h4>Frameworks / Libraries</h4>
+                    <div class="frameworks">
+                        <i class="fa-brands fa-laravel" title="Laravel"></i>
+                        <i class="fa-brands fa-react" title="React"></i>
+                        <img src="spring.jpg" width="70px" alt="Spring Boot">
+                        <img src="django.png" width="70px" alt="Django">
+                        <img src="flutter.jpg" width="50px" alt="Flutter">
+                        <i class="fa-brands fa-angular" title="Angular"></i>
                     </div>
                 </div>
-                
-                <li><img src="mongodb.png" width="40px" alt=""></li>
-            </ul>
+            </div>
+    
+            <!-- Bases de données -->
+            <div class="competence-card">
+                <h3>Bases de données</h3>
+                <div class="databases">
+                    <img src="sql-server.png" width="60px" alt="SQL Server">
+                    <img src="mysql.png" width="60px" alt="MySQL">
+                    <img src="oracle.png" width="70px" alt="Oracle">
+                    <img src="postgresql.jpg" width="70px" alt="PostgreSQL">
+                    <img src="mongodb.png" width="40px" alt="MongoDB">
+                </div>
+            </div>
+    
         </div>
-    </div>
+    </section>
+    
 
-    <div class="contact" id="contacts">
-        <!-- <div class="form">
-            <form method="post">
-                <input type="text" placeholder="Votre nom" id="nom" required/>
-                <input type="text" placeholder="sujet" id="sujet" required>
-                <textarea placeholder="contenu" name="" id="contenu" cols="20" rows="6" required></textarea>
-                <button type="submit" id="btn">valider</button>
-            </form>
-        </div> -->
-        <div>
-            <p>email : <a href="mailto:carlosdjoyou@gmail.com">carlosdjoyou@gmail.com   <i class="fa-solid fa-envelope"></i></a>
-            </p>
-            <p>email : <a href="mailto:leroyparistone@gmail.com">leroyparistone@gmail.com   <i class="fa-solid fa-envelope"></i></a>
-            </p>  
-            <p>Tel : <a href="https://wa.me/0021650516175">+216 50516175 <i class="fa-brands fa-whatsapp"></i></a></p>
-            <p> <a href="https://wa.me/0022870382052"><i class="fa-brands fa-whatsapp"></i> +228 70382052 </a>
-            </p>
+    <!-- Contacts -->
+    <section id="contacts" class="contact">
+        <h2 class="section-title">Contactez-moi</h2>
+        <div class="contact-card">
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email :</span>
+                <a href="mailto:carlosdjoyou@gmail.com">carlosdjoyou@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email :</span>
+                <a href="mailto:leroyparistone@gmail.com">leroyparistone@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Téléphone / WhatsApp :</span>
+                <a href="https://wa.me/22871054764">(+228) 71 05 47 64</a>
+            </div>
         </div>
-        <!-- <div>
-            <a href="https://www.facebook.com/cPARISTONE?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/cPARISTONE"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://wa.me/0021650516175"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://github.com/PARISTONEdj"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/carlos-djoyou-322801231"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://instagram.com/vellyparistone?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a>
-        </div> -->
-    </div>
-
-    <div class="footer">
-        <div>
-            <a href="https://www.facebook.com/cPARISTONE?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://wa.me/0021650516175"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://github.com/PARISTONEdj"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/carlos-djoyou-322801231"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://instagram.com/vellyparistone?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a>
-            
+            <a href="https://instagram.com/vellyparistone"><i class="fa-brands fa-instagram"></i></a>
             <a href="mailto:carlosdjoyou@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         </div>
-            
-    </div>
-    
+    </footer>
+
 </body>
 </html>
